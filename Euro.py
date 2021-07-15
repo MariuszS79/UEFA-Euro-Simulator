@@ -89,7 +89,6 @@ while game:
 
 
 
-
     print("--------------------\n")
     again=input("Would you like to see next Euro? y/n: ")
     if again=="y" or again=="Y":
