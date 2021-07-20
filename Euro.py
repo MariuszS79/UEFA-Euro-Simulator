@@ -73,9 +73,10 @@ while game:
 
     input("\nHit enter to see group stage")
     os.system('cls')
-    os.system('clear')
+    #os.system('clear')
 
-    print ("Group A")
+    print("Group A")
+
 
     
 
