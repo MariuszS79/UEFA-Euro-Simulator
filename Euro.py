@@ -5,37 +5,37 @@ from tabulate import tabulate
 uefa_member_countries=["Albania", "Andorra", "Armenia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bosnia and Herzegovina", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "England", "Estonia", "Faroe Islands", "Finland", "France", "Georgia", "Germany", "Gibraltar", "Greece", "Hungary", "Iceland", "Israel", "Italy", "Kazakhstan", "Kosovo", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg", "Malta", "Moldova", "Montenegro", "Netherlands", "North Macedonia", "Northern Ireland", "Norway", "Poland", "Portugal", "Republic of Ireland", "Romania", "Russia", "San Marino", "Scotland", "Serbia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland", "Turkey", "Ukraine", "Wales"]
 
 def pick24():
-  global teams
-  teams=random.sample(set(uefa_member_countries), 24)
-  teams.sort()
-  random.shuffle(teams)
+    global teams
+    teams=random.sample(set(uefa_member_countries), 24)
+    teams.sort()
+    random.shuffle(teams)
 
 
 year=2020
 
 
 def make_groups():
-  for i in range (4):
-    group_a.append(teams.pop(0))
-    group_b.append(teams.pop(0))
-    group_c.append(teams.pop(0))
-    group_d.append(teams.pop(0))
-    group_e.append(teams.pop(0))
-    group_f.append(teams.pop(0))
+    for i in range (4):
+      group_a.append(teams.pop(0))
+      group_b.append(teams.pop(0))
+      group_c.append(teams.pop(0))
+      group_d.append(teams.pop(0))
+      group_e.append(teams.pop(0))
+      group_f.append(teams.pop(0))
 
 def print_groups():
-  print("\nGroup A:")
-  print (*group_a, sep="\n")
-  print("-----\nGroup B:")
-  print (*group_b, sep="\n")
-  print("-----\nGroup C:")
-  print (*group_c, sep="\n")
-  print("-----\nGroup D:")
-  print (*group_d, sep="\n")
-  print("-----\nGroup E:")
-  print (*group_e, sep="\n")
-  print("-----\nGroup F:")
-  print (*group_f, sep="\n")
+    print("\nGroup A:")
+    print (*group_a, sep="\n")
+    print("-----\nGroup B:")
+    print (*group_b, sep="\n")
+    print("-----\nGroup C:")
+    print (*group_c, sep="\n")
+    print("-----\nGroup D:")
+    print (*group_d, sep="\n")
+    print("-----\nGroup E:")
+    print (*group_e, sep="\n")
+    print("-----\nGroup F:")
+    print (*group_f, sep="\n")
 
 score=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 7]
     
