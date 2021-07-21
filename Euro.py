@@ -133,6 +133,32 @@ while game:
     
     print ("\nTeams getting promoted are:", (group_a[0][0]),"and", group_a[1][0])
 
+    #group B
+
+    headers=["Team", "MP", "W", "D", "L", "GF", "GA", "GD", "Pts"]
+    group_b[0]=[group_b[0], 0, 0, 0, 0, 0, 0, 0, 0]
+    group_b[1]=[group_b[1], 0, 0, 0, 0, 0, 0, 0, 0]
+    group_b[2]=[group_b[2], 0, 0, 0, 0, 0, 0, 0, 0]
+    group_b[3]=[group_b[3], 0, 0, 0, 0, 0, 0, 0, 0]
+
+    grpb=[[group_b[0], group_b[1]], [group_b[2], group_b[3]], [group_b[0], group_b[2]],[group_b[1], group_b[3]], [group_b[0], group_b[3]], [group_b[1], group_b[2]]]
+    print("----------\nGroup B matches\n----------")
+    
+    for i in grpb:
+          score1=(random.choice(score))
+          score2=(random.choice(score))
+          mp()
+          wld_pts()
+          gf_ga_gd()
+          print(i[0][0], i[1][0], sep="   vs   ")
+          print(score1,":",score2)
+
+    group_b.sort(key=lambda team: (team[8], team[7]), reverse=True)
+    print("\n")
+    print(tabulate(group_b, headers=["Team", "MP", "W ", "D ", "L ", "GF", "GA", "GD", "Pts"],))
+    
+    print ("\nTeams getting promoted are:", (group_b[0][0]),"and", group_b[1][0])
+
     
 
 
@@ -151,4 +177,5 @@ while game:
     else:
       print("\nHave a nice day then ;-)")
       game=False
+
 
